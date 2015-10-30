@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Base template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-4">
+              <a href="/" class="logo">
+                <img src="img/logo.png" alt="FooseShoes">
+              </a>
+            </div>
+            <div class="col-md-9 col-xs-8">
+              <div class="auth">
+                <a href="#">Login</a>
+                or
+                <a href="#">Register</a>
+              </div>
+              <div class="search">
+                search
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="menu-icon visible-xs">
+              </div>
+              <ul class="main-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="cart">
+                <span>0</span>
+              </div>
+              <div class="favorite">
+                <span>30</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="slider">
+        <div class="container">
+          <div class="cycle-slideshow"
+              data-cycle-fx=scrollHorz
+              data-cycle-timeout=0
+              data-cycle-slides="> div"
+              data-cycle-pager="#per-slide-template"
+              >
+              <div data-cycle-pager-template="<a href=#>Pink Shoes <span>Now af $145,99</span></a>">
+                  <img src="img/slide.png" alt="">
+                  <div class="info">
+                      <p class="price">$145,99</p>
+                      <h2 class="title">Pink Shoes<br> 2013 Collection</h2>
+                      <p class="desc">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+                  </div>
+              </div>
+              <div data-cycle-pager-template="<a href=#>Anna Field <span>Limited Edition</span></a>">
+                  <img src="img/slide.png" alt="">
+                  <div class="info">
+                      <p class="price">$145,99</p>
+                      <h2 class="title">Pink Shoes<br> 2013 Collection</h2>
+                      <p class="desc">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+                  </div>
+              </div>
+              <div data-cycle-pager-template="<a href=#>Prada <span>Summer is coming</span></a>">
+                  <img src="img/slide.png" alt="">
+                  <div class="info">
+                      <p class="price">$145,99</p>
+                      <h2 class="title">Pink Shoes<br> 2013 Collection</h2>
+                      <p class="desc">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+                  </div>
+              </div>
+              <div data-cycle-pager-template="<a href=#>Casadei <span>All Colors avaiable</span></a>">
+                  <img src="img/slide.png" alt="">
+                  <div class="info">
+                      <p class="price">$145,99</p>
+                      <h2 class="title">Pink Shoes<br> 2013 Collection</h2>
+                      <p class="desc">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+                  </div>
+              </div>
+              <div data-cycle-pager-template="<a href=#>Mellow Yellow <span>Free delivery</span></a>">
+                  <img src="img/slide.png" alt="">
+                  <div class="info">
+                      <p class="price">$145,99</p>
+                      <h2 class="title">Pink Shoes<br> 2013 Collection</h2>
+                      <p class="desc">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+                  </div>
+              </div>
+          </div>
+          <!-- empty element for pager links -->
+          <div id=per-slide-template class="center external"></div>
+        </div>
+      </div>
+
+      <div class="offers">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <a class="item" href="#">
+                <p class="title"><span>On sale</span></p>
+                <img class="img-responsive" src="img/offer1.jpg" alt="On sale">
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a class="item" href="#">
+                <p class="title"><span>Special offers</span></p>
+                <img class="img-responsive" src="img/offer2.jpg" alt="Special offers">
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a class="item" href="#">
+                <p class="title"><span>Must have</span></p>
+                <img class="img-responsive" src="img/offer3.jpg" alt="Must have">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main class="content">
+        <div class="container">
+          <div class="products">
+            <p class="button pull-right">Show All</p>
+            <p class="title">New arrivals on FooseShoes</p>
+          
+            <div class="row">
+              <div class="col-md-4">
+                <div class="item">
+                  <a class="product" href="#">
+                    <img src="img/product1.jpg" alt="Even&amp;amp;Odd">
+                    <hr>
+                    <span class="text-left">
+                      <span class="price">$145,99</span>
+                      <span class="name">Even&amp;amp;Odd</span>
+                    </span>
+                  </a>
+          
+                  <div class="links">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="item">
+                  <a class="product" href="#">
+                    <img src="img/product2.jpg" alt="Even&amp;amp;Odd">
+                    <hr>
+                    <span class="text-left">
+                      <span class="price">$145,99</span>
+                      <span class="name">Even&amp;Odd</span>
+                    </span>
+                  </a>
+          
+                  <div class="links">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="item">
+                  <a class="product" href="#">
+                    <img src="img/product3.jpg" alt="Even&amp;Odd">
+                    <hr>
+                    <span class="text-left">
+                      <span class="price">$145,99</span>
+                      <span class="name">Even&amp;Odd</span>
+                    </span>
+                  </a>
+          
+                  <div class="links">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <p class="button pull-right">Show All</p>
+            <p class="title">Best sellers of the month</p>
+          
+            <div class="row">
+              <div class="col-md-4">
+                <div class="item">
+                  <a class="product" href="#">
+                    <img src="img/product4.jpg" alt="Even&amp;Odd">
+                    <hr>
+                    <span class="text-left">
+                      <span class="price">$145,99</span>
+                      <span class="name">Even&amp;Odd</span>
+                    </span>
+                  </a>
+          
+                  <div class="links">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="item">
+                  <a class="product" href="#">
+                    <img src="img/product5.jpg" alt="Even&amp;Odd">
+                    <hr>
+                    <span class="text-left">
+                      <span class="price">$145,99</span>
+                      <span class="name">Even&amp;Odd</span>
+                    </span>
+                  </a>
+          
+                  <div class="links">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="item">
+                  <a class="product" href="#">
+                    <img src="img/product6.jpg" alt="Even&amp;Odd">
+                    <hr>
+                    <span class="text-left">
+                      <span class="price">$145,99</span>
+                      <span class="name">Even&amp;Odd</span>
+                    </span>
+                  </a>
+          
+                  <div class="links">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="news row">
+            <div class="col-md-3">
+              <div class="item">
+                <p class="title">Free Shipping</p>
+          
+                <div class="desc">Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="item">
+                <p class="title">Testimonials</p>
+          
+                <div class="desc">vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit [...]</div>
+          
+                <p class="author">- John Doe -</p>
+              </div>
+            </div>
+            <div class="col-md-6 blog">
+              <div class="item">
+                <p class="title">Blog news</p>
+          
+                <p class="date">Apr <span>01</span></p>
+          
+                <div class="text">
+                  <p class="subtitle">Nice & clean. The best for you blog!</p>
+                  <p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. </p>
+                </div>
+          
+                <p class="date clear">Apr <span>01</span></p>
+          
+                <div class="text">
+                  <p class="subtitle">Nice & clean. The best for you blog!</p>
+                  <p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="item">
+                <p class="title">Text widget</p>
+      
+                <div class="desc">
+                  Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="item twitter">
+                <p class="title">Twitter widget</p>
+      
+                <a href="#"><span>@ericafustero</span> Why thank you. Your work looks awesome by the way! <span>@treemelody</span></a>
+      
+                <span class="date">19 days ago</span>
+      
+                <a href="#"><span>@roymarvelous</span> You can seek a refund through TF if it is not as advertised - but it is :)</a>
+      
+                <span class="date">21 days ago</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="item">
+                <p class="title">Flickr widget</p>
+      
+                <img src="img/flickr.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-7">
+              <div class="item newsletter">
+                <form action="/">
+                  <input class="email" type="text" name="email" placeholder="Enter email for newsletter">
+                  <input class="button" type="submit" value="send">
+                </form>
+              </div>
+            </div>
+            <div class="col-md-4 col-md-offset-4 col-sm-5">
+              <div class="item social">
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">google plus</a>
+                <a href="#">Instagram</a>
+                <a href="#">flickr</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="copyright">
+                <p>Copyright © Fooseshoes 2013 - 2016</p>
+                <p>Designed by EnzoLiVolti</p>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Faqs</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/lib/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/lib/bootstrap.min.js"></script>
+
+    <script src="js/lib/jquery.cycle2.min.js"></script>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
